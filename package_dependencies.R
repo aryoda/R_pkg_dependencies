@@ -59,15 +59,14 @@ get.deps <- function(package.names, db, reverse = FALSE) {
                                           reverse = reverse,
                                           verbose = TRUE)
   
-  pretty.deb.pkgs <- lapply(dep.pkgs, function(x) {paste(x, collapse = ", " )})
+  pretty.dep.pkgs <- unlist(lapply(dep.pkgs, function(x) {paste(x, collapse = ", " )}))
   
-  return(pretty.deb.pkgs)
+  return(pretty.dep.pkgs)
 }
 
 # Enrich all dependencies = all required packages (full recursion)
 deps[, requires := get.deps(Package, avail)]
 deps[, required_by := get.deps(Package, avail, reverse = TRUE)]
-
 
 
 # "deps" does now contain the result
