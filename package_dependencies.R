@@ -33,6 +33,8 @@ library(data.table)
 # https://stackoverflow.com/questions/38686427/determine-minimum-r-version-for-all-package-dependencies/38687310?noredirect=1#comment64767951_38687310
 # https://stackoverflow.com/a/40009614/4468078
 # https://stackoverflow.com/questions/14645363/listing-r-package-dependencies-without-installing-packages
+# https://stackoverflow.com/questions/4090169/elegant-way-to-check-for-missing-packages-and-install-them?rq=1
+# https://stackoverflow.com/questions/47582588/discover-all-installed-r-packages-with-a-java-dependency-for-security-reasons/47583165#47583165
 
 
 
